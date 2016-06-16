@@ -1,0 +1,8 @@
+---
+- name: Redplouy the cropcompass django app
+  become: yes
+  become_method: su
+  become_user: vagrant
+  command: "/vagrant/scripts/reload-django-code.bash"
+  args:
+    chdir: "{{working_dir}}"

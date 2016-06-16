@@ -1,0 +1,17 @@
+---
+- hosts: localhost
+  connection: local
+  gather_facts: false
+
+  vars:
+    working_dir: /vagrant
+    branch: main
+
+  roles:
+    - cropcompass-ubuntu
+    - cropcompass-postgres
+    - cropcompass-virtualenvwrapper
+    - cropcompass-django
+    - cropcompass-app
+    - cropcompass-uwsgi
+    - cropcompass-nginx

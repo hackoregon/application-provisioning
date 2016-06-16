@@ -1,0 +1,8 @@
+---
+- name: Install nginx and configure for cropcompass
+  become: yes
+  become_method: su
+  become_user: vagrant
+  command: "/vagrant/scripts/nginx.bash"
+  args:
+    chdir: "{{working_dir}}"

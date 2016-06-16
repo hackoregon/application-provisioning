@@ -1,0 +1,8 @@
+---
+- name: Install the packages preq-reqs for cropcompass
+  become: yes
+  become_method: su
+  become_user: vagrant
+  command: "/vagrant/scripts/ubuntu.bash"
+  args:
+    chdir: "{{working_dir}}"

@@ -1,0 +1,8 @@
+---
+- name: Install django
+  become: yes
+  become_method: su
+  become_user: vagrant
+  command: "/vagrant/scripts/django.bash"
+  args:
+    chdir: "{{working_dir}}"
