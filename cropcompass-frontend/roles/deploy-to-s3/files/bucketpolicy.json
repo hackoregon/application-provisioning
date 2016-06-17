@@ -1,0 +1,27 @@
+{
+	"Version": "2008-10-17",
+	"Id": "www-crompass-org-bucket-policy",
+	"Statement": [
+		{
+			"Sid": "AllowPublicRead",
+			"Effect": "Allow",
+			"Principal": {
+				"AWS": "*"
+			},
+			"Action": "s3:GetObject",
+			"Resource": "arn:aws:s3:::www.cropcompass.org/*"
+		},
+
+    {
+			"Sid": "PublicReadGetObject",
+			"Effect": "Allow",
+			"Principal": "*",
+			"Action": [
+				"s3:GetObject"
+			],
+			"Resource": [
+				"arn:aws:s3:::www.cropcompass.org/*"
+			]
+    	}
+	]
+}

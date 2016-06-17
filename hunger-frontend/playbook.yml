@@ -1,0 +1,20 @@
+---
+
+- hosts: localhost
+  connection: local
+  gather_facts: false
+
+  vars:
+    npm_bin: /usr/local/bin/npm
+    working_dir: /Users/ddcarr/projects/gen-hungerfrontend
+    dist_dir: "{{working_dir}}"
+    branch: HEAD
+    website_bucket: www.cropcompass.org
+    region: us-west-2
+    repo: https://github.com/hackoregon/cropcompass-ui.git
+
+  roles:
+    - get-assets            #create working directory and pull the repo
+    - install-dependencies  #install library run-time dependencies for gen
+    - gen-website           #gen the website
+    - deploy-to-s3          #deploy website to s3

@@ -1,0 +1,14 @@
+---
+- name: Install the app and libs
+  become: yes
+  become_method: sudo
+  command: "{{npm_bin}} install"
+  args:
+    chdir: "{{working_dir}}"
+
+- name: Compile Sass
+  become: yes
+  become_method: sudo
+  command: "{{npm_bin}} run sass"
+  args:
+    chdir: "{{working_dir}}"

@@ -1,0 +1,21 @@
+---
+
+- name: clean up the working directory
+  become: yes
+  become_method: sudo
+  file:
+    path: "{{working_dir}}"
+    state: absent
+
+- name: create the working directory
+  file:
+    path: "{{working_dir}}"
+    state: directory
+
+- name: clone the repo
+  git:
+    repo: "{{repo}}"
+    clone: yes
+    dest: "{{working_dir}}"
+    version: "{{branch}}"
+    force: yes
