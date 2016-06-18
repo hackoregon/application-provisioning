@@ -94,9 +94,6 @@ From your local repo root:
 ```
 $ cd crompcompass-frontend
 ```
-Edit **playbook.yml**
-Change the following line to
-
 
 ./deployCropcompassFrontend.sh
 ```
