@@ -38,7 +38,6 @@ You should see something like this on the command line:
 2016-06-17 17:28:44 www.programmingforprogress.org
 ```
 #### Install Ansible
- apt-get install ansible
 * Mac OSX
 ```
 $ sudo easy_install pip
