@@ -90,20 +90,19 @@ $ chmod 600 ~/.vault_pass.txt
 ### Deploying the static websites
 ---------------------------------
 From your local repo root:
-* Cropcompass front end
+
+* Cropcompass front end deploy
 ```
 $ cd crompcompass-frontend
-```
-
 ./deployCropcompassFrontend.sh
 ```
-* Education front end
+* Education front end deploy
 ```
 $ cd education-frontend
 ./deployEducationFrontend.sh
 ```
 
-* Hunger front end
+* Hunger front end deploy (WIP)
 ```
 $ cd hunger-frontend
 ./deployHungerFrontend.sh
