@@ -6,7 +6,7 @@
 
   vars:
     npm_bin: /usr/local/bin/npm
-    working_dir: /Users/ddcarr/projects/gen-cropcompass
+    working_dir: gen-cropcompass
     dist_dir: "{{working_dir}}/dist"
     branch: HEAD
     env: prod

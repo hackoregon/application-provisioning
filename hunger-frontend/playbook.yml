@@ -6,7 +6,7 @@
 
   vars:
     npm_bin: /usr/local/bin/npm
-    working_dir: /Users/ddcarr/projects/gen-hungerfrontend
+    working_dir: gen-hunger
     dist_dir: "{{working_dir}}"
     branch: HEAD
     website_bucket: www.cropcompass.org

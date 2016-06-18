@@ -8,12 +8,10 @@
     overwrite: no
     permission: public-read
 
-- name: create bucket policy to allow to serve up site
-  s3_bucket:
-    name: mys3bucket
-    policy: "{{ lookup('file','bucketpolicy.json') }}"
+# - name: create bucket policy to allow to serve up site
+#   s3_bucket:
+#     name: "{{website_bucket}}"
+#     policy: "{{ lookup('file','bucketpolicy.json') }}"
 
 - name: Upload to s3
-  command: "aws s3 cp {{dist_dir}}/. s3://{{website_bucket}}/ --recursive --exclude \".git/*\" --exclude \".gitignore/*\" --exclude \"node_modules/*\""
-  args:
-    chdir: "{{dist_dir}}"
+  command: "aws s3 cp {{dist_dir}}/ s3://{{website_bucket}}/ --recursive --exclude \".git/*\" --exclude \".gitignore/*\" --exclude \"node_modules/*\""

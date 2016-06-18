@@ -9,6 +9,4 @@
     permission: public-read
 
 - name: Upload to s3
-  command: "aws s3 cp {{dist_dir}}/. s3://{{website_bucket}}/ --recursive --exclude \".git/*\" --exclude \".gitignore/*\" --exclude \"node_modules/*\""
-  args:
-    chdir: "{{dist_dir}}"
+  command: "aws s3 cp {{dist_dir}}/ s3://{{website_bucket}}/ --recursive --exclude \".git/*\" --exclude \".gitignore/*\" --exclude \"node_modules/*\""
