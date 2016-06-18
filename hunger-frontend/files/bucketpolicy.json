@@ -1,6 +1,6 @@
 {
 	"Version": "2008-10-17",
-	"Id": "b2cc31d0-cc91-4285-a658-473099d2c867",
+	"Id": "www-oregonhungerequation-org-bucket-policy",
 	"Statement": [
 		{
 			"Sid": "AllowPublicRead",

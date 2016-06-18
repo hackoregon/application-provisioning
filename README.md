@@ -66,7 +66,7 @@ ansible-vault create cropcompass-frontend/group_vars/all/vault
 ```
 ansible-vault create education-frontend/group_vars/all/vault
 ```
-* For the ***Hunger frontend: (WIP)***
+* For the ***Hunger frontend:***
 ```
 ansible-vault create hunger-frontend/group_vars/all/vault
 ```
@@ -101,7 +101,7 @@ $ cd education-frontend
 ./deployEducationFrontend.sh
 ```
 
-* Hunger front end deploy (WIP)
+* Hunger front end deploy
 ```
 $ cd hunger-frontend
 ./deployHungerFrontend.sh

@@ -19,3 +19,6 @@
     dest: "{{working_dir}}"
     version: "{{branch}}"
     force: yes
+
+- name: get the fonts
+  command: "aws s3 cp s3://{{font_bucket}}/ {{working_dir}}/src/styles/fonts --recursive"

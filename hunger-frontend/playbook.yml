@@ -7,11 +7,13 @@
   vars:
     npm_bin: /usr/local/bin/npm
     working_dir: gen-hunger
+    font_bucket: hacko-fonts
     dist_dir: "{{working_dir}}"
     branch: HEAD
-    website_bucket: www.cropcompass.org
+    website_bucket: www.oregonhungerequation.org
     region: us-west-2
-    repo: https://github.com/hackoregon/cropcompass-ui.git
+    repo: https://github.com/hackoregon/Hunger-frontend.git
+
 
   roles:
     - get-assets            #create working directory and pull the repo
