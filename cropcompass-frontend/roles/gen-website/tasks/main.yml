@@ -9,6 +9,6 @@
 - name: Create deployable bundle
   become: yes
   become_method: sudo
-    command: "{{npm_bin}} 
+    command: "{{npm_bin}} run deploy:prod
   args:
     chdir: "{{working_dir}}"
